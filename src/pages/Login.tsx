@@ -9,7 +9,7 @@ const Login = () => {
         backgroundImage: 'url("src/assets/vegas-x2.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
-        width: "100%",
+        width: "100vw",
         position: "relative",
       }}
     >
@@ -47,7 +47,7 @@ const Login = () => {
                   <span className="text-white text-xs mt-2">REMEMBER ME</span>
                   <button
                     type="submit"
-                    className="mx-auto w-20 py-1 px-4 bg-blue-500 my-3 cursor-pointer text-white rounded-md"
+                    className="mx-auto w-20 py-1 px-4 !bg-blue-500 my-3 cursor-pointer text-white rounded-md"
                   >
                     ENTER
                   </button>
