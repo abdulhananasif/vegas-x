@@ -20,7 +20,7 @@ const PaginationControl = ({
             src="src/assets/pagesphere.png"
             alt="page"
             className={`w-full h-full object-cover ${
-              page === currentPage + 1 ? 'opacity-30' : ''
+              page === currentPage + 1 ? 'opacity-70' : ''
             }`}
           />
           <p className="absolute -translate-x-1/2 left-1/2 font-semibold text-base text-white">

@@ -21,7 +21,7 @@ const GameSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-20 flex items-center !-mt-[20px]">
+    <div className="relative w-full h-10 flex items-center">
       <Slider {...settings} className="w-full ">
         {sliderList.map((game) => (
           <div

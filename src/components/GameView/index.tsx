@@ -10,7 +10,7 @@ const GameView = ({game}: GameViewProps) => {
     <div className="relative flex justify-center items-center">
       <Image
         src={game.path}
-        className="w-60 h-32 rounded-lg"
+        className="w-60 h-26 rounded-lg"
         alt={`Game ${game.id}`}
       />
       <Image

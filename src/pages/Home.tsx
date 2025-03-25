@@ -6,14 +6,15 @@ import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
-    <div className=" bg-[url('src/assets/bg.jpg')] bg-[120%] bg-no-repeat bg-left h-screen flex flex-col justify-between">
-      <div>
-        <Navbar />
-        <GameSlider />
-      </div>
+    <div className=" bg-[url('src/assets/bg.jpg')] bg-no-repeat bg-center h-screen flex flex-col">
+      <Navbar />
+      <GameSlider />
+
       <MainLogo />
       <GamesList />
-      <Footer />
+      <div className="fixed bottom-0">
+        <Footer />
+      </div>
     </div>
   );
 };

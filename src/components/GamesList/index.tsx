@@ -44,7 +44,7 @@ const GamesList = () => {
           alt="Previous Page"
         />
         <div
-          className={`grid grid-cols-5 grid-rows-3 gap-3 p-4 transform transition-transform duration-50 ease-in-out ${
+          className={`grid grid-cols-5 grid-rows-3 gap-3 transform transition-transform duration-50 ease-in-out ${
             transitionState === 1
               ? '-translate-x-[100%] opacity-0'
               : transitionState === -1
