@@ -1,9 +1,9 @@
-import GameListPager from '../components/GameListPager';
+import GamesList from '../components/GamesList';
 
 const Home = () => {
   return (
     <div className="w-screen">
-      <GameListPager />
+      <GamesList />
     </div>
   );
 };
