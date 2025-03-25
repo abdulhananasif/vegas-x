@@ -4,7 +4,6 @@ import Image from '../ui/Image';
 import GameView from '../GameView';
 import PaginationControl from '../PaginationControl';
 import {useState} from 'react';
-import Footer from '../Footer';
 
 const GamesList = () => {
   const itemsPerPage = 15;
@@ -34,7 +33,7 @@ const GamesList = () => {
     }
   };
   return (
-    <div className="flex flex-col justify-center items-center h-[87vh] gap-4">
+    <div className="flex flex-col justify-center items-center gap-4">
       <div className="flex space-around items-center gap-3">
         <Image
           className={`cursor-pointer rounded h-[10rem] w-[6rem] ${
@@ -67,7 +66,6 @@ const GamesList = () => {
         />
       </div>
       <PaginationControl currentPage={currentPage} totalPages={totalPages} />
-      <Footer />
     </div>
   );
 };

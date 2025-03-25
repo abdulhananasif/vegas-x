@@ -2,7 +2,7 @@ import Image from '../ui/Image';
 
 const Footer = () => {
   return (
-    <div className="relative w-full bg-no-repeat h-full">
+    <div className="w-full bg-no-repeat">
       <Image
         src="src/assets/navbar.png"
         alt="navbar"
@@ -13,8 +13,7 @@ const Footer = () => {
         alt="wager_box"
         className="absolute bottom-0 left-[35%] -translate-x-1/2 h-20"
       />
-
-      <div className="absolute bottom-0 right-[14%] -translate-x-1/2 h-20 flex items-center space-between">
+      <div className="absolute -bottom-1 right-[14%] -translate-x-1/2 h-20 flex items-center space-between">
         <Image
           src="src/assets/botbutton_main.png"
           alt="botbutton"
