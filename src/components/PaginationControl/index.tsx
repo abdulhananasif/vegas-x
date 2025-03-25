@@ -12,11 +12,13 @@ const PaginationControl = ({
   return (
     <div className="flex items-center gap-4 mt-4">
       {Array.from({length: totalPages}, (_, index) => index + 1).map((page) => (
-        <div className="relative flex items-center justify-center w-10 h-10">
+        <div
+          className="relative flex items-center justify-center w-10 h-10"
+          key={page}
+        >
           <Image
             src="src/assets/pagesphere.png"
             alt="page"
-            key={page}
             className={`w-full h-full object-cover ${
               page === currentPage + 1 ? 'opacity-30' : ''
             }`}

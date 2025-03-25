@@ -1,6 +1,7 @@
 import Footer from '../components/Footer';
 import GameSlider from '../components/GameSlider';
 import GamesList from '../components/GamesList';
+import MainLogo from '../components/MainLogo';
 import Navbar from '../components/Navbar';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <Navbar />
         <GameSlider />
       </div>
+      <MainLogo />
       <GamesList />
       <Footer />
     </div>
