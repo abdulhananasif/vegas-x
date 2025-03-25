@@ -11,19 +11,37 @@ const Footer = () => {
       <Image
         src="src/assets/wager_box.png"
         alt="wager_box"
-        className="absolute bottom-0 left-[35%] -translate-x-1/2 h-20"
+        className="absolute bottom-2 left-[37%] -translate-x-1/2 h-[12vh]"
       />
-      <div className="absolute -bottom-1 right-[14%] -translate-x-1/2 h-20 flex items-center space-between">
-        <Image
-          src="src/assets/botbutton_main.png"
-          alt="botbutton"
-          className="h-20"
-        />
-        <Image
-          src="src/assets/botbutton_main.png"
-          alt="botbutton"
-          className="h-20"
-        />
+      <p className="absolute -bottom-1 left-[38%] -translate-x-1/2 h-[12vh] w-[21rem]  text-white text-sm font-semibold">
+        BALANCE 12023 CHARGEABLE BALANCE 5995 WAGER GOOD CASHBACK BONUS 1560
+        DAILY BONUS 28
+      </p>
+
+      <div className="absolute bottom-1 right-[12%] -translate-x-1/2 h-[12vh] flex items-center space-x-4">
+        {/* Left Image with Text */}
+        <div className="relative">
+          <Image
+            src="src/assets/botbutton_main.png"
+            alt="botbutton"
+            className="h-20"
+          />
+          <p className="absolute inset-0 flex items-center justify-center text-white font-extrabold text-xl">
+            LOGOUT
+          </p>
+        </div>
+
+        {/* Right Image with Text */}
+        <div className="relative">
+          <Image
+            src="src/assets/botbutton_main.png"
+            alt="botbutton"
+            className="h-20"
+          />
+          <p className="absolute inset-0 flex items-center justify-center text-white font-extrabold text-xl py-2">
+            HELP
+          </p>
+        </div>
       </div>
     </div>
   );
