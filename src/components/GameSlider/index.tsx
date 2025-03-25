@@ -13,31 +13,36 @@ const GameSlider = () => {
     slidesToShow: 7,
     slidesToScroll: 1,
     nextArrow: (
-      <GameSliderArrow src="src/assets/catarrowright.png" orientation="right" />
+      <GameSliderArrow
+        src="src/assets/catarrowright.png"
+        orientation="right"
+        customClass="right-0 h-24"
+      />
     ),
     prevArrow: (
-      <GameSliderArrow src="src/assets/catarrowleft.png" orientation="left" />
+      <GameSliderArrow
+        src="src/assets/catarrowleft.png"
+        orientation="left"
+        customClass="left-0 h-24"
+      />
     ),
   };
 
   return (
-    // <div className="relative w-full flex items-center">
-    <Slider {...settings} className="w-full h-12">
+    <Slider {...settings} className="w-full h-24 relative">
       {sliderList.map((game) => (
         <div
           key={game.id}
-          className="bg-[url('src/assets/botbutton_main.png')] h-12 !py-1 bg-center border border-left border-blue-900"
+          className="bg-[url('src/assets/botbutton_main.png')] h-24 !py-1 bg-center border border-left border-blue-900"
         >
           <Image
             src={game.path}
             alt={`Game ${game.id}`}
             className="w-full h-full"
-            // className="h-12 w-full rounded"
           />
         </div>
       ))}
     </Slider>
-    // </div>
   );
 };
 

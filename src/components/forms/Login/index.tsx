@@ -1,8 +1,12 @@
+import {useNavigate} from 'react-router';
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
 
 const LoginForm = () => {
-  const handleLogin = async () => {};
+  const navigate = useNavigate();
+  const handleLogin = async () => {
+    navigate('/home');
+  };
   return (
     <form
       onSubmit={handleLogin}

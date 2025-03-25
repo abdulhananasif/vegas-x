@@ -6,8 +6,8 @@ import Login from './pages/Login';
 const App = () => {
   return (
     <Routes>
-      {/* <Route path="/" element={<Login />} /> */}
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Home />} />
     </Routes>
   );
 };

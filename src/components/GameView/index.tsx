@@ -8,16 +8,20 @@ interface GameViewProps {
 const GameView = ({game}: GameViewProps) => {
   return (
     <div className="relative flex justify-center items-center">
-      <Image
-        src={game.path}
-        className="w-60 h-26 rounded-lg"
-        alt={`Game ${game.id}`}
-      />
-      <Image
-        src="src/assets/frame 2.png"
-        className="absolute inset-0 w-full h-full rounded-lg"
-        alt="Frame"
-      />
+      <div className="w-80 h-40">
+        <Image
+          src={game.path}
+          className="w-full h-full rounded-lg"
+          alt={`Game ${game.id}`}
+        />
+      </div>
+      <div className="w-full h-full absolute">
+        <Image
+          src="src/assets/frame 2.png"
+          className=" w-full h-full rounded-lg"
+          alt="Frame"
+        />
+      </div>
     </div>
   );
 };
