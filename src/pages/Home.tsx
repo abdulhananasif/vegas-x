@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import GameSlider from '../components/GameSlider';
 import GamesList from '../components/GamesList';
 import Image from '../components/ui/Image';

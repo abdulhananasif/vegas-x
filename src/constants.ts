@@ -165,10 +165,10 @@ export const sliderList: Game[] = [
   },
   {
     id: 8,
-    path: 'src/assets/progmatic.png',
+    path: 'src/assets/amatic.png',
   },
   {
     id: 9,
-    path: 'src/assets/oldbonustitle.jpg',
+    path: 'src/assets/bgaming.png',
   },
 ];

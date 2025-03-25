@@ -4,6 +4,7 @@ import Image from '../ui/Image';
 import GameView from '../GameView';
 import PaginationControl from '../PaginationControl';
 import {useState} from 'react';
+import Footer from '../Footer';
 
 const GamesList = () => {
   const itemsPerPage = 15;
@@ -66,6 +67,7 @@ const GamesList = () => {
         />
       </div>
       <PaginationControl currentPage={currentPage} totalPages={totalPages} />
+      <Footer />
     </div>
   );
 };
