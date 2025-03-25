@@ -1,9 +1,11 @@
+import {useNavigate} from 'react-router';
 import Image from '../ui/Image';
 
 const Helper = () => {
+  const navigate = useNavigate();
   return (
     <div className="absolute -bottom-7 right-[15%] -translate-x-1/2 h-[12vh] flex items-center space-x-4">
-      <div className="relative">
+      <div className="relative cursor-pointer" onClick={() => navigate('/')}>
         <Image
           src="src/assets/botbutton_main.png"
           alt="botbutton"
