@@ -2,7 +2,16 @@ import Image from '../ui/Image';
 
 const Footer = () => {
   return (
-    <div className="w-full bg-no-repeat">
+    <div className="relative w-full">
+      <div className="absolute left-0"></div>
+      <div className="absolute right-0 -translate-y-20 top-0 z-100">
+        <Image src="src/assets/lvl_bg.png" alt="lvl" className="w-60 h-10" />
+        <Image
+          src="src/assets/lvl_progress.png"
+          alt="progress"
+          className="w-10 h-9 "
+        />
+      </div>
       <Image
         src="src/assets/navbar.png"
         alt="navbar"
