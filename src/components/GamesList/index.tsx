@@ -33,7 +33,7 @@ const GamesList = () => {
     }
   };
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen gap-4">
       <div className="flex space-around items-center gap-4">
         <Image
           className={`cursor-pointer rounded h-[10rem] w-[6rem] ${
