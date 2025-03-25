@@ -2,11 +2,11 @@ import Image from '../ui/Image';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="h-15 w-full">
       <Image
         src="src/assets/jackpot_bar.png"
         alt="jackpot"
-        className="relative h-15 w-full"
+        className="relative h-full w-full"
       />
     </div>
   );

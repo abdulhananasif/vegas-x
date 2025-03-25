@@ -2,7 +2,7 @@ import Image from '../ui/Image';
 
 const Footer = () => {
   return (
-    <div className="relative w-full h-[138px]">
+    <div className="relative w-full h-[7.79rem]">
       <div className="absolute  left-10 translate-y-3 top-0 z-100 flex  flex-col gap-4">
         <div className="flex w-[18vw] justify-between items-center">
           <div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <p className="text-white font-medium">1560</p>
           </div>
         </div>
-      </div>{' '}
+      </div>
       <div className="absolute right-12 translate-y-4 top-0 z-100 flex flex-col gap-5">
         <div>
           <Image
@@ -54,22 +54,23 @@ const Footer = () => {
         </div>
       </div>
       <Image src="src/assets/navbar.png" alt="navbar" />
-      <Image
+      {/* <div className="h-[6.875emj]"> */}
+      {/* <Image
         src="src/assets/topbar.png"
         alt="topbar"
-        className="h-[10vh] w-full"
-      />
+        className="h-[100px] w-full"
+      /> */}
+      {/* </div> */}
       <Image
         src="src/assets/wager_box.png"
         alt="wager_box"
-        className="absolute bottom-3 left-[37%] -translate-x-1/2 h-[11vh]"
+        className="absolute bottom-0 left-[37%] -translate-x-1/2 h-[11vh]"
       />
-      <p className="absolute -bottom-1 left-[38%] -translate-x-1/2 h-[12vh] w-[21rem]  text-white text-sm font-semibold">
+      <p className="absolute -bottom-7 left-[38%] -translate-x-1/2 h-[12vh] w-[21rem]  text-white text-sm font-semibold">
         BALANCE 12023 CHARGEABLE BALANCE 5995 WAGER GOOD CASHBACK BONUS 1560
         DAILY BONUS 28
       </p>
-      <div className="absolute bottom-1 right-[12%] -translate-x-1/2 h-[12vh] flex items-center space-x-4">
-        {/* Left Image with Text */}
+      <div className="absolute -bottom-7 right-[15%] -translate-x-1/2 h-[12vh] flex items-center space-x-4">
         <div className="relative">
           <Image
             src="src/assets/botbutton_main.png"
@@ -80,8 +81,6 @@ const Footer = () => {
             LOGOUT
           </p>
         </div>
-
-        {/* Right Image with Text */}
         <div className="relative">
           <Image
             src="src/assets/botbutton_main.png"

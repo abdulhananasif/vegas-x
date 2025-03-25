@@ -21,22 +21,23 @@ const GameSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-10 flex items-center">
-      <Slider {...settings} className="w-full ">
-        {sliderList.map((game) => (
-          <div
-            key={game.id}
-            className="bg-[url('src/assets/botbutton_main.png')] !py-1 bg-center border border-left border-blue-900"
-          >
-            <Image
-              src={game.path}
-              alt={`Game ${game.id}`}
-              className="h-12 w-full rounded"
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    // <div className="relative w-full flex items-center">
+    <Slider {...settings} className="w-full h-12">
+      {sliderList.map((game) => (
+        <div
+          key={game.id}
+          className="bg-[url('src/assets/botbutton_main.png')] h-12 !py-1 bg-center border border-left border-blue-900"
+        >
+          <Image
+            src={game.path}
+            alt={`Game ${game.id}`}
+            className="w-full h-full"
+            // className="h-12 w-full rounded"
+          />
+        </div>
+      ))}
+    </Slider>
+    // </div>
   );
 };
 
