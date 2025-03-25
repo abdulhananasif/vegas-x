@@ -134,3 +134,41 @@ export const gamesList: Game[] = [
     path: 'src/assets/wilddiamondsicon.jpg',
   },
 ];
+export const sliderList: Game[] = [
+  {
+    id: 1,
+    path: 'src/assets/egt.png',
+  },
+  {
+    id: 2,
+    path: 'src/assets/fishing.png',
+  },
+  {
+    id: 3,
+    path: 'src/assets/netent.png',
+  },
+  {
+    id: 4,
+    path: 'src/assets/table.png',
+  },
+  {
+    id: 5,
+    path: 'src/assets/wazdan.png',
+  },
+  {
+    id: 6,
+    path: 'src/assets/racing.png',
+  },
+  {
+    id: 7,
+    path: 'src/assets/novomatic.png',
+  },
+  {
+    id: 8,
+    path: 'src/assets/progmatic.png',
+  },
+  {
+    id: 9,
+    path: 'src/assets/oldbonustitle.jpg',
+  },
+];

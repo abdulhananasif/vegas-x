@@ -33,8 +33,8 @@ const GamesList = () => {
     }
   };
   return (
-    <div className="flex flex-col justify-center items-center h-screen gap-4">
-      <div className="flex space-around items-center gap-4">
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex space-around items-center gap-3">
         <Image
           className={`cursor-pointer rounded h-[10rem] w-[6rem] ${
             !previousEnabled ? 'opacity-70 cursor-not-allowed' : ''
