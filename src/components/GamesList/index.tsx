@@ -34,10 +34,10 @@ const GamesList = () => {
   };
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="flex space-around items-center">
+      <div className="flex space-around items-center gap-4">
         <Image
           className={`cursor-pointer rounded h-[10rem] w-[6rem] ${
-            !previousEnabled ? 'opacity-50 cursor-not-allowed' : ''
+            !previousEnabled ? 'opacity-70 cursor-not-allowed' : ''
           }`}
           src="src/assets/leftarrow.png"
           onClick={handlePrevPage}
@@ -58,7 +58,7 @@ const GamesList = () => {
         </div>
         <Image
           className={`cursor-pointer rounded h-[10rem] w-[6rem] ${
-            currentPage + 1 >= totalPages ? 'opacity-50 cursor-not-allowed' : ''
+            currentPage + 1 >= totalPages ? 'opacity-70 cursor-not-allowed' : ''
           }`}
           src="src/assets/rightarrow.png"
           onClick={handleNextPage}
