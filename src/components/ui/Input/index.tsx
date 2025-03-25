@@ -1,7 +1,7 @@
 interface InputProps {
   name?: string;
-  className: string;
-  type: 'text' | 'number' | 'password';
+  className?: string;
+  type: 'text' | 'number' | 'password' | 'checkbox';
   placeholder?: string;
 }
 const Input = ({name, className, type, placeholder}: InputProps) => {
