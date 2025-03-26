@@ -8,6 +8,7 @@ interface GameNavigationArrowsProps {
   setNextPage: () => void;
   currentPage: number;
   totalPages: number;
+  changeLayout: boolean;
 }
 const GameNavigationArrows = ({
   children,
@@ -16,6 +17,7 @@ const GameNavigationArrows = ({
   setNextPage,
   currentPage,
   totalPages,
+  changeLayout,
 }: GameNavigationArrowsProps) => {
   const [transitionState, setTransitionState] = useState(0);
 
@@ -50,7 +52,9 @@ const GameNavigationArrows = ({
         />
       </div>
       <div
-        className={`grid grid-cols-1 md:grid-cols-5 grid-rows-3 gap-3 transform transition-transform duration-50 ease-in-out ${
+        className={`grid grid-cols-1 ${
+          changeLayout ? 'md:grid-cols-7' : 'md:grid-cols-5'
+        } grid-rows-3 gap-3 transform transition-transform duration-50 ease-in-out ${
           transitionState === 1
             ? '-translate-x-[100%] opacity-0'
             : transitionState === -1

@@ -3,11 +3,15 @@ import Profile from '../Profile';
 import Transaction from '../Transaction';
 import Information from '../Information';
 import Helper from '../Helper';
+import {Dispatch, SetStateAction} from 'react';
 
-const Footer = () => {
+interface FooterProps {
+  setChangeLayout: Dispatch<SetStateAction<boolean>>;
+}
+const Footer = ({setChangeLayout}: FooterProps) => {
   return (
     <div className="relative w-full h-[7.79rem]">
-      <Transaction />
+      <Transaction setChangeLayout={setChangeLayout} />
       <Profile />
       <Image src="/navbar.png" alt="navbar" className="hidden lg:block" />
       <div className="h-full bg-[#571BA0] w-screen" />

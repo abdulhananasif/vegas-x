@@ -8,9 +8,10 @@ import {Game} from '../../types/game';
 
 interface GamesListProps {
   selectedCategory: string;
+  changeLayout: boolean;
 }
 
-const GamesList = ({selectedCategory}: GamesListProps) => {
+const GamesList = ({selectedCategory, changeLayout}: GamesListProps) => {
   const itemsPerPage = 15;
   const totalItems = gamesList.length;
   const {currentPage, setNextPage, setPreviousPage, previousEnabled} =
@@ -43,6 +44,7 @@ const GamesList = ({selectedCategory}: GamesListProps) => {
         setPreviousPage={setPreviousPage}
         currentPage={currentPage}
         totalPages={totalPages}
+        changeLayout={changeLayout}
       >
         {paginatedGames.map(renderGame)}
       </GameNavigationArrows>

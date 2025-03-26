@@ -1,6 +1,11 @@
+import {Dispatch, SetStateAction} from 'react';
 import Image from '../ui/Image';
 
-const Transaction = () => {
+interface TransactionProps {
+  setChangeLayout: Dispatch<SetStateAction<boolean>>;
+}
+
+const Transaction = ({setChangeLayout}: TransactionProps) => {
   return (
     <div className="absolute  left-10 translate-y-3 top-0 z-100 flex  flex-col gap-4">
       <div className="flex w-[18vw] justify-between items-center">
@@ -9,7 +14,12 @@ const Transaction = () => {
         </div>
         <div className="flex gap-2">
           <Image src="/en.png" alt="flag-en" className="h-7 w-10" />
-          <Image src="/layout_15.png" alt="flag-en" className="h-7 w-10" />
+          <Image
+            src="/layout_15.png"
+            alt="flag-en"
+            className="h-7 w-10 cursor-pointer"
+            onClick={() => setChangeLayout((prev) => !prev)}
+          />
         </div>
       </div>
       <div className="flex w-[18vw] justify-center gap-3 items-center">
