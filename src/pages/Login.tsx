@@ -3,15 +3,11 @@ import Image from '../components/ui/Image';
 
 const Login = () => {
   return (
-    <div className='flex flex-col min-h-screen bg-[url("src/assets/vegas-x2.jpg")] bg-cover w-screen relative bg-center'>
+    <div className='flex flex-col min-h-screen bg-[url("/vegas-x2.jpg")] bg-cover w-screen relative bg-center'>
       <div className="flex flex-col lg:flex-row !mt-19 gap-4">
         <div className="w-full lg:w-[49%]">
           <div className="float-right">
-            <Image
-              src="src/assets/vegas-logo.png"
-              alt="logo"
-              className="w-[540px]"
-            />
+            <Image src="/vegas-logo.png" alt="logo" className="w-[540px]" />
           </div>
         </div>
         <div className="hidden lg:block lg:w-[11%]" />

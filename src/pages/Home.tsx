@@ -5,7 +5,7 @@ import MainLogo from '../components/MainLogo';
 
 const Home = () => {
   return (
-    <div className=" bg-[url('src/assets/bg.jpg')] bg-no-repeat bg-center h-screen flex flex-col">
+    <div className=" bg-[url('/bg.jpg')] bg-no-repeat bg-center h-screen flex flex-col">
       <GameSlider />
       <div className="flex flex-col justify-evenly">
         <MainLogo />

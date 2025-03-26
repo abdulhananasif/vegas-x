@@ -14,14 +14,14 @@ const GameSlider = () => {
     slidesToScroll: 1,
     nextArrow: (
       <GameSliderArrow
-        src="src/assets/catarrowright.png"
+        src="/catarrowright.png"
         orientation="right"
         customClass="right-0 h-24"
       />
     ),
     prevArrow: (
       <GameSliderArrow
-        src="src/assets/catarrowleft.png"
+        src="/catarrowleft.png"
         orientation="left"
         customClass="left-0 h-24"
       />
@@ -33,7 +33,7 @@ const GameSlider = () => {
       {sliderList.map((game) => (
         <div
           key={game.id}
-          className="bg-[url('src/assets/botbutton_main.png')] h-24 !py-1 bg-center border border-left border-blue-900"
+          className="bg-[url('/botbutton_main.png')] h-24 !py-1 bg-center border border-left border-blue-900"
         >
           <Image
             src={game.path}

@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="relative w-full h-[7.79rem]">
       <Transaction />
       <Profile />
-      <Image src="src/assets/navbar.png" alt="navbar" />
+      <Image src="/navbar.png" alt="navbar" />
       <Information />
       <Helper />
     </div>

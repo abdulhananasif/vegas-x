@@ -17,7 +17,7 @@ const PaginationControl = ({
           key={page}
         >
           <Image
-            src="src/assets/pagesphere.png"
+            src="/pagesphere.png"
             alt="page"
             className={`w-full h-full object-cover ${
               page === currentPage + 1 ? 'opacity-70' : ''

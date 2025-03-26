@@ -14,12 +14,12 @@ const GamesList = () => {
   const startIndex = currentPage * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
   const leftIcons = [
-    {path: 'src/assets/myjp_icon.png', customClass: 'w-32 h-32'},
-    {path: 'src/assets/music_off.png', customClass: 'w-20 h-20'},
+    {path: '/myjp_icon.png', customClass: 'w-32 h-32'},
+    {path: '/music_off.png', customClass: 'w-20 h-20'},
   ];
   const rightIcons = [
-    {path: 'src/assets/favorites.png', customClass: 'w-20 h-20'},
-    {path: 'src/assets/gear_normal.png', customClass: 'w-20 h-20'},
+    {path: '/favorites.png', customClass: 'w-20 h-20'},
+    {path: '/gear_normal.png', customClass: 'w-20 h-20'},
   ];
 
   return (

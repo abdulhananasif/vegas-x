@@ -4,13 +4,9 @@ const Profile = () => {
   return (
     <div className="absolute right-12 translate-y-4 top-0 z-100 flex flex-col gap-5">
       <div>
+        <Image src="/lvl_bg.png" alt="lvl" className="w-60 h-10 relative" />
         <Image
-          src="src/assets/lvl_bg.png"
-          alt="lvl"
-          className="w-60 h-10 relative"
-        />
-        <Image
-          src="src/assets/lvl_progress.png"
+          src="/lvl_progress.png"
           alt="progress"
           className="w-10 h-9 absolute top-0.5 bottom-0.5 left-0.5"
         />

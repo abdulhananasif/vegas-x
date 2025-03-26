@@ -5,7 +5,7 @@ const Information = () => {
     <>
       <div className="h-24 absolute bottom-0 left-[37%]">
         <Image
-          src="src/assets/wager_box.png"
+          src="/wager_box.png"
           alt="wager_box"
           className="-translate-x-1/2 h-full"
         />

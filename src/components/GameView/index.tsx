@@ -17,7 +17,7 @@ const GameView = ({game}: GameViewProps) => {
       </div>
       <div className="w-full h-full absolute">
         <Image
-          src="src/assets/frame 2.png"
+          src="/frame 2.png"
           className=" w-full h-full rounded-lg"
           alt="Frame"
         />

@@ -4,22 +4,14 @@ const MainLogo = () => {
   return (
     <div className="w-full flex justify-center relative">
       <div className="h-40">
-        <Image
-          src="src/assets/logo 2.png"
-          alt="logo"
-          className="w-full h-full"
-        />
+        <Image src="/logo 2.png" alt="logo" className="w-full h-full" />
       </div>
       <div className="absolute translate-y-1/2 right-3 h-20 w-32">
-        <Image
-          src="src/assets/dailybox.png"
-          alt="dailybox"
-          className="w-full h-full"
-        />
+        <Image src="/dailybox.png" alt="dailybox" className="w-full h-full" />
       </div>
       <div className="absolute translate-y-11/12 right-5 h-15 w-28">
         <Image
-          src="src/assets/goldbonusbg.png"
+          src="/goldbonusbg.png"
           alt="goldbonus"
           className="w-full h-full"
         />

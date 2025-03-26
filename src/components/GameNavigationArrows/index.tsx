@@ -44,7 +44,7 @@ const GameNavigationArrows = ({
           className={`cursor-pointer rounded w-full h-full ${
             !previousEnabled ? 'opacity-70 cursor-not-allowed' : ''
           }`}
-          src="src/assets/leftarrow.png"
+          src="/leftarrow.png"
           onClick={handlePrevPage}
           alt="Previous Page"
         />
@@ -65,7 +65,7 @@ const GameNavigationArrows = ({
           className={`cursor-pointer rounded w-full h-full ${
             currentPage + 1 >= totalPages ? 'opacity-70 cursor-not-allowed' : ''
           }`}
-          src="src/assets/rightarrow.png"
+          src="/rightarrow.png"
           onClick={handleNextPage}
           alt="Next Page"
         />
