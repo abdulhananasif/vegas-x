@@ -2,7 +2,7 @@ import Image from '../ui/Image';
 
 const MainLogo = () => {
   return (
-    <div className="w-full flex justify-center relative">
+    <div className="w-full hidden lg:flex justify-center relative">
       <div className="h-40">
         <Image src="/logo 2.png" alt="logo" className="w-full h-full" />
       </div>

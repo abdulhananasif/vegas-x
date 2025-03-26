@@ -12,7 +12,7 @@ interface ExtraProps {
 const Extra = ({customClass, icons}: ExtraProps) => {
   return (
     <div
-      className={`absolute bottom-9 flex flex-col gap-4 items-center ${customClass}`}
+      className={`absolute bottom-9 hidden lg:flex flex-col gap-4 items-center ${customClass}`}
     >
       {icons.map((icon) => (
         <div key={icon.path} className={icon.customClass}>

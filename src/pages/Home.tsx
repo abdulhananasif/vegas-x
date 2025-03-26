@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className=" bg-[url('/bg.jpg')] bg-no-repeat bg-center h-screen flex flex-col">
       <GameSlider />
-      <div className="flex flex-col justify-evenly">
+      <div className="flex flex-col justify-evenly h-[70vh] lg:h-auto !mt-2">
         <MainLogo />
         <GamesList />
       </div>

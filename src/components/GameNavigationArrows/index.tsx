@@ -39,7 +39,7 @@ const GameNavigationArrows = ({
   };
   return (
     <div className="flex items-center gap-8">
-      <div className="h-[10rem] w-[6rem]">
+      <div className="h-[10rem] w-[6rem] hidden lg:flex">
         <Image
           className={`cursor-pointer rounded w-full h-full ${
             !previousEnabled ? 'opacity-70 cursor-not-allowed' : ''
@@ -60,7 +60,7 @@ const GameNavigationArrows = ({
       >
         {children}
       </div>
-      <div className="h-[10rem] w-[6rem]">
+      <div className="h-[10rem] w-[6rem] hidden lg:flex">
         <Image
           className={`cursor-pointer rounded w-full h-full ${
             currentPage + 1 >= totalPages ? 'opacity-70 cursor-not-allowed' : ''

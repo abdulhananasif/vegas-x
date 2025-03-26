@@ -23,7 +23,7 @@ const GamesList = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 relative overflow-y-scroll h-96 lg:h-auto lg:overflow-hidden">
+    <div className="flex flex-col lg:justify-center items-center gap-4 relative overflow-y-scroll h-full lg:h-auto lg:overflow-hidden">
       <GameNavigationArrows
         previousEnabled={previousEnabled}
         setNextPage={setNextPage}

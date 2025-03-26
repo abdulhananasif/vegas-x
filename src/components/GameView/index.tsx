@@ -8,7 +8,7 @@ interface GameViewProps {
 const GameView = ({game}: GameViewProps) => {
   return (
     <div className="relative flex justify-center items-center">
-      <div className="w-80 h-40">
+      <div className="w-72 h-40">
         <Image
           src={game.path}
           className="w-full h-full rounded-lg"

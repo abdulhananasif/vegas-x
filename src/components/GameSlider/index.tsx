@@ -16,16 +16,36 @@ const GameSlider = () => {
       <GameSliderArrow
         src="/catarrowright.png"
         orientation="right"
-        customClass="right-0 h-24"
+        customClass="right-0 h-24 w-12 lg:w-auto"
       />
     ),
     prevArrow: (
       <GameSliderArrow
         src="/catarrowleft.png"
         orientation="left"
-        customClass="left-0 h-24"
+        customClass="left-0 h-24 w-12 lg:w-auto"
       />
     ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 7,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
