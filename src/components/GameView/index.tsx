@@ -7,7 +7,7 @@ interface GameViewProps {
 
 const GameView = ({game}: GameViewProps) => {
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="relative flex justify-center items-center cursor-pointer">
       <div className="w-72 h-40">
         <Image
           src={game.path}

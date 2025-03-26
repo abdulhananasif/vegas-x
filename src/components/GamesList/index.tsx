@@ -4,12 +4,19 @@ import GameView from '../GameView';
 import PaginationControl from '../PaginationControl';
 import GameNavigationArrows from '../GameNavigationArrows';
 import Extra from '../Extra';
+import {Game} from '../../types/game';
 
-const GamesList = () => {
+interface GamesListProps {
+  selectedCategory: string;
+}
+
+const GamesList = ({selectedCategory}: GamesListProps) => {
   const itemsPerPage = 15;
   const totalItems = gamesList.length;
   const {currentPage, setNextPage, setPreviousPage, previousEnabled} =
-    usePagination({totalItems});
+    usePagination({
+      totalItems,
+    });
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const startIndex = currentPage * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
@@ -21,6 +28,12 @@ const GamesList = () => {
     {path: '/favorites.png', customClass: 'w-20 h-20'},
     {path: '/gear_normal.png', customClass: 'w-20 h-20'},
   ];
+  const filteredGames = selectedCategory
+    ? gamesList.filter((game) => game.name === selectedCategory)
+    : gamesList;
+
+  const paginatedGames = filteredGames.slice(startIndex, endIndex);
+  const renderGame = (game: Game) => <GameView game={game} key={game.id} />;
 
   return (
     <div className="flex flex-col lg:justify-center items-center gap-4 relative overflow-y-scroll h-full lg:h-auto lg:overflow-hidden">
@@ -31,13 +44,18 @@ const GamesList = () => {
         currentPage={currentPage}
         totalPages={totalPages}
       >
-        {gamesList.slice(startIndex, endIndex).map((game) => (
-          <GameView game={game} key={game.id} />
-        ))}
+        {paginatedGames.map(renderGame)}
       </GameNavigationArrows>
-      <Extra customClass="left-0" icons={leftIcons} />
-      <Extra customClass="right-4" icons={rightIcons} />
-      <PaginationControl currentPage={currentPage} totalPages={totalPages} />
+      {paginatedGames.length >= 15 && (
+        <>
+          <Extra customClass="left-0" icons={leftIcons} />
+          <Extra customClass="right-4" icons={rightIcons} />
+          <PaginationControl
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
+        </>
+      )}
     </div>
   );
 };

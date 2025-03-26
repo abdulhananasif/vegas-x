@@ -4,8 +4,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from '../ui/Image';
 import GameSliderArrow from '../GameSliderArrow';
+import {Dispatch, SetStateAction} from 'react';
 
-const GameSlider = () => {
+interface GameSliderProps {
+  setSelectedCategory: Dispatch<SetStateAction<string>>;
+}
+
+const GameSlider = ({setSelectedCategory}: GameSliderProps) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -54,6 +59,7 @@ const GameSlider = () => {
         <div
           key={game.id}
           className="bg-[url('/botbutton_main.png')] h-24 !py-1 bg-center border border-left border-blue-900"
+          onClick={() => setSelectedCategory(game.name)}
         >
           <Image
             src={game.path}
