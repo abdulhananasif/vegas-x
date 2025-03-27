@@ -11,7 +11,7 @@ const Login = () => {
           </div>
         </div>
         <div className="hidden lg:block lg:w-[11%]" />
-        <div className="w-full lg:w-[30%] flex items-center">
+        <div className="w-full lg:w-[30%] flex items-center justify-center">
           <div className="max-w-md w-[350px] !p-5 !px-7 rounded-2xl bg-[#8095BF] h-[87%] opacity-90 ">
             <LoginForm />
           </div>

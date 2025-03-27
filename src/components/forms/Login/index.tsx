@@ -10,7 +10,7 @@ const LoginForm = () => {
   return (
     <form
       onSubmit={handleLogin}
-      className="flex flex-col justify-evenly h-full items-center"
+      className="flex flex-col justify-evenly h-full items-center gap-2"
     >
       <Input
         type="text"
